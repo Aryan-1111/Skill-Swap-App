@@ -1,0 +1,132 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+/* 🌄 Body */
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background-image:url("https://imgs.search.brave.com/uqNnVg_b-ByTsRF9HVDLJ9cGTrA8E0OKzqMmC2CkX48/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA1Lzk1LzczLzY5/LzM2MF9GXzU5NTcz/NjkwMF9tUzU2b0Ft/OU43SWFGRHdCUEtz/UklNSWx3UERFVFNZ/YS5qcGc");
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+   backdrop-filter: blur(5px);
+}
+
+/* 🌑 Overlay */
+body::before{
+  content:"";
+  position:absolute;
+  width:100%;
+  height:100%;
+  /* background:rgba(0,0,0,0.5); */
+  z-index:0;
+}
+
+/* 📦 Container */
+.container{
+  position:relative;
+  z-index:1;
+  width:90%;
+  max-width:320px;
+  padding:20px;
+  border-radius:25px;
+  background:rgba(255,255,255,0.1);
+  backdrop-filter:blur(10px);
+  box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* Headings */
+h1, h2{
+  text-align:center;
+  color:white;
+}
+
+/* 🔍 Search */
+.search-box input{
+  width:100%;
+  padding:12px;
+  border-radius:20px;
+  border:none;
+  outline:none;
+  margin-top:10px;
+}
+
+/* 🎯 Categories */
+.categories{
+  display:flex;
+  gap:10px;
+  margin-top:15px;
+}
+
+.cat{
+  flex:1;
+  padding:10px;
+  border-radius:20px;
+  border:none;
+  color:white;
+  cursor:pointer;
+  font-size:14px;
+}
+
+/* Colors */
+.cat:nth-child(1){
+  background:linear-gradient(45deg,#6a5af9,#a78bfa);
+}
+.cat:nth-child(2){
+  background:linear-gradient(45deg,#ec4899,#f472b6);
+}
+.cat:nth-child(3){
+  background:linear-gradient(45deg,#fb923c,#fcd34d);
+}
+
+/* 👨‍🏫 Mentor */
+.mentor{
+  display:flex;
+  align-items:center;
+  background:white;
+  padding:10px;
+  border-radius:15px;
+  margin-top:20px;
+}
+
+.mentor img{
+  width:45px;
+  height:45px;
+  border-radius:10px;
+}
+
+.mentor div{
+  margin-left:10px;
+  flex:1;
+}
+
+.mentor span{
+  font-weight:bold;
+}
+
+/* 📍 Nearby */
+.nearby{
+  background:white;
+  padding:12px;
+  border-radius:15px;
+  margin-top:10px;
+}
+
+/* 📱 Mobile */
+@media(max-width:480px){
+
+  .categories{
+    flex-direction:column;
+  }
+
+  .cat{
+    width:100%;
+  }
+
+}

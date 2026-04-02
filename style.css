@@ -1,0 +1,76 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  /* background-color:#9f95e9; */
+  background-image:url("https://imgs.search.brave.com/uqNnVg_b-ByTsRF9HVDLJ9cGTrA8E0OKzqMmC2CkX48/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA1Lzk1LzczLzY5/LzM2MF9GXzU5NTcz/NjkwMF9tUzU2b0Ft/OU43SWFGRHdCUEtz/UklNSWx3UERFVFNZ/YS5qcGc");
+   background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  backdrop-filter: blur(5px);
+}
+
+/* 🎥 Video Background */
+#bg-video{
+  position:fixed;
+  right:0;
+  bottom:0;
+  min-width:100%;
+  min-height:100%;
+  z-index:-1;
+  object-fit:cover;
+}
+
+/* Content Center */
+#mains{
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  color:white;
+  padding:20px;
+}
+
+/* Big Text */
+#main1{
+  font-size:10vw; /* responsive */
+}
+
+/* Sub Text */
+#main2{
+  font-size:4vw;
+}
+
+/* Button */
+#bt{
+  margin-top:20px;
+  padding:10px 25px;
+  font-size:20px;
+  border-radius:30px;
+  border:none;
+  cursor:pointer;
+  box-shadow:5px 5px 10px black;
+}
+
+/* 📱 Mobile */
+@media(max-width:768px){
+
+  #main1{
+    font-size:15vw;
+  }
+
+  #main2{
+    font-size:6vw;
+  }
+
+  #bt{
+    font-size:16px;
+    padding:8px 20px;
+  }
+
+}

@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #e5e5e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image:url("https://imgs.search.brave.com/uqNnVg_b-ByTsRF9HVDLJ9cGTrA8E0OKzqMmC2CkX48/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA1Lzk1LzczLzY5/LzM2MF9GXzU5NTcz/NjkwMF9tUzU2b0Ft/OU43SWFGRHdCUEtz/UklNSWx3UERFVFNZ/YS5qcGc");
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  backdrop-filter: blur(5px);
+}
+
+/* Phone */
+.phone {
+  width: 320px;
+  height: 550px;
+  border-radius: 30px;
+  overflow: hidden;
+  background: #f5f6fb;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* Header */
+.header {
+  background: linear-gradient(135deg, #6a5acd, #3b82f6);
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Chat Area */
+.chat-area {
+  padding: 15px;
+  height: 480px;
+  overflow-y: auto;
+}
+
+/* Messages */
+.msg {
+  max-width: 75%;
+  padding: 10px 14px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+/* Left (other user) */
+.left {
+  background: white;
+  color: #333;
+  align-self: flex-start;
+}
+
+/* Right (you) */
+.right {
+  background: linear-gradient(135deg, #6a5acd, #3b82f6);
+  color: white;
+  margin-left: auto;
+}
+
+/* Smaller bubble */
+.small {
+  max-width: 60%;
+}
+
+/* Input */
+.input-box {
+  position: absolute;
+  bottom: 70px;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.input-box input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  background: white;
+}
+
+.input-box button {
+  width: 45px;
+  border-radius: 50%;
+  border: none;
+  background: #6a5acd;
+  color: white;
+  font-size: 18px;
+}
+
+/* Bottom Nav */
+.bottom-nav {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.nav-item {
+  text-align: center;
+  font-size: 13px;
+  color: #777;
+}
+
+.nav-item.active {
+  color: #6a5acd;
+}

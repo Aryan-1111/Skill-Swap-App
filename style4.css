@@ -1,0 +1,162 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+/* 🌄 Body */
+body{
+  font-family: Arial, sans-serif;
+  background:#f3f7fc;
+  background-image:url("https://imgs.search.brave.com/uqNnVg_b-ByTsRF9HVDLJ9cGTrA8E0OKzqMmC2CkX48/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA1Lzk1LzczLzY5/LzM2MF9GXzU5NTcz/NjkwMF9tUzU2b0Ft/OU43SWFGRHdCUEtz/UklNSWx3UERFVFNZ/YS5qcGc");
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  backdrop-filter: blur(5px);
+}
+
+/* 🌑 Overlay */
+body::before{
+  content:"";
+  position:fixed;
+  width:100%;
+  height:100%;
+  /* background:rgba(0,0,0,0.4); */
+  z-index:0;
+}
+
+/* 📦 Wrapper */
+.wrapper{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:90vh;
+  padding:20px;
+  position:relative;
+  z-index:1;
+}
+
+/* 🧊 Card */
+.card{
+  width:100%;
+  max-width:320px;
+  border-radius:25px;
+   overflow:hidden; 
+  box-shadow:0 15px 40px rgba(0,0,0,0.2);
+  background:rgba(255,255,255,0.1);
+  backdrop-filter:blur(10px);
+}
+
+/* Header */
+.header{
+  color:white;
+  text-align:center;
+  padding:40px 20px 20px;
+  position:relative;
+}
+
+/* Icons */
+.back, .heart{
+  position:absolute;
+  top:15px;
+  font-size:18px;
+  cursor:pointer;
+}
+
+.back{ left:15px; }
+.heart{ right:15px; }
+
+/* Profile */
+.profile{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+.profile img{
+  width:80px;
+  height:80px;
+  border-radius:50%;
+  border:3px solid white;
+  margin-top:10px;
+}
+
+.profile h2{
+  margin:10px 0 5px;
+  font-size:20px;
+}
+
+.profile p{
+  margin:0;
+  opacity:0.9;
+  font-size:14px;
+}
+
+/* Content */
+.content{
+  padding:20px;
+  color:white;
+}
+
+/* Skill */
+.skill-box{
+  background:rgba(255,255,255,0.2);
+  padding:12px;
+  border-radius:12px;
+  margin-top:10px;
+  cursor:pointer;
+}
+
+.skill-box span{
+  float:right;
+}
+
+.dropdown{
+  display:none;
+  margin-top:10px;
+  font-size:14px;
+}
+
+/* Learn */
+.learn{
+  background:rgba(255,255,255,0.2);
+  padding:12px;
+  border-radius:12px;
+  margin-top:10px;
+}
+
+/* Button */
+.btn{
+  width:100%;
+  margin-top:20px;
+  padding:12px;
+  border:none;
+  border-radius:25px;
+  color:white;
+  font-size:16px;
+  background:linear-gradient(45deg,#6a5af9,#ec4899);
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.btn:hover{
+  transform:scale(1.05);
+}
+
+/* 📱 Mobile */
+@media(max-width:480px){
+
+  .card{
+    max-width:100%;
+  }
+
+  .profile img{
+    width:70px;
+    height:70px;
+  }
+
+  .profile h2{
+    font-size:18px;
+  }
+
+}
