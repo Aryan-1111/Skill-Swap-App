@@ -60,7 +60,7 @@ h1, h2{
 /* 🎯 Categories */
 .categories{
   display:flex;
-  gap:10px;
+  gap:20px;
   margin-top:15px;
 }
 
