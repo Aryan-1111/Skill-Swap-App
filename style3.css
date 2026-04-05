@@ -72,6 +72,7 @@ h1, h2{
   color:white;
   cursor:pointer;
   font-size:20px;
+  justify-content: space-between;
 }
 
 /* Colors */
@@ -92,7 +93,7 @@ h1, h2{
   background:white;
   padding:10px;
   border-radius:15px;
-  margin-top:20px;
+  margin-top:17px;
 }
 
 .mentor img{
