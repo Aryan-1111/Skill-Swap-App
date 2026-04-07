@@ -60,9 +60,9 @@ h1, h2{
 /* 🎯 Categories */
 .categories{
   display:flex;
-  gap: 20px;
+  gap: 25px;
   margin-top:15px;
-  margin-left: 15px;
+  /* margin-right: px;  */
 }
 
 .cat{
@@ -73,7 +73,7 @@ h1, h2{
   color:white;
   cursor:pointer;
   font-size:17px;
-  font-size:20px;
+  /* font-size:20px; */
   justify-content: space-between;
 }
 
