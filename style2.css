@@ -39,7 +39,7 @@ body::before{
 /* 📦 Login box */
 .log2{
   width:90%;
-  max-width:400px;
+  max-width:350px;
   text-align:center;
   background:rgba(176, 202, 255, 0.85);
   padding:25px;
