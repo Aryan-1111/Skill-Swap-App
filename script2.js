@@ -1,25 +1,37 @@
 function login() {
-  const email = document.getElementById("email").value;
-  const password = document.getElementById("password").value;
+  const email = document.getElementById("email").value.trim();
+  const password = document.getElementById("password").value.trim();
+  const message = document.getElementById("message");
 
   const storedEmail = "test@gmail.com";
   const storedPassword = "1234567";
 
+  // Clear previous message
+  message.innerText = "";
+
+  // Validation
   if (email === "" || password === "") {
-    document.getElementById("message").innerText = "Please fill all fields ⚠️";
+    message.innerText = "Please fill all fields ⚠️";
+    message.style.color = "orange";
     return;
   }
 
+  // Login check
   if (email === storedEmail && password === storedPassword) {
-    document.getElementById("message").innerText = "Login Successful ✅";
+    message.innerText = "Login Successful ✅";
+    message.style.color = "green";
 
-    // Redirect only after success
+    // Save login state
+    localStorage.setItem("user", email);
+
+    // Redirect after 1 sec
     setTimeout(() => {
       window.location.href = "index3.html";
     }, 1000);
 
   } else {
-    document.getElementById("message").innerText = "Invalid Email or Password ❌";
+    message.innerText = "Invalid Email or Password ❌";
+    message.style.color = "red";
   }
 }
 
