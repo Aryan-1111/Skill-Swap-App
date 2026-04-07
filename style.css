@@ -13,7 +13,7 @@ body{
   backdrop-filter: blur(5px);
 }
 
-/* 🎥 Video Background */
+
 #bg-video{
   position:fixed;
   right:0;
@@ -24,7 +24,6 @@ body{
   object-fit:cover;
 }
 
-/* Content Center */
 #mains{
   height:100vh;
   display:flex;
@@ -36,17 +35,17 @@ body{
   padding:20px;
 }
 
-/* Big Text */
+
 #main1{
   font-size:10vw; /* responsive */
 }
 
-/* Sub Text */
+
 #main2{
   font-size:4vw;
 }
 
-/* Button */
+
 #bt{
   margin-top:20px;
   padding:10px 25px;
@@ -57,7 +56,7 @@ body{
   box-shadow:5px 5px 10px black;
 }
 
-/* 📱 Mobile */
+
 @media(max-width:768px){
 
   #main1{
