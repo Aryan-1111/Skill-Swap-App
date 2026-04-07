@@ -20,12 +20,12 @@ body {
 
 /* Phone Frame */
 .phone {
-  width: 300px;
+  width: 320px;
   height: 550px;
-  border-radius: 20px;
+  border-radius: 30px;
   overflow: hidden;
   position: relative;
-  background: white;
+  background: #f8f9fc;
   /* background: linear-gradient(135deg, #3b82f6, #a855f7); */
   /* box-shadow: 0 10px 30px rgba(0,0,0,0.2); */
    box-shadow:0 15px 40px rgba(0,0,0,0.2);
@@ -70,21 +70,21 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  border-top-left-radius: 20px; 
+  border-top-right-radius: 20px; 
 }
 
 .nav-item {
   text-align: center;
-  font-size: 14px;
+  font-size: 15px;
   color: #555;
 }
 
 .nav-item span {
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .nav-item.active {
   color: #4f46e5;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
