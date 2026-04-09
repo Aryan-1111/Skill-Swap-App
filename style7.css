@@ -57,26 +57,26 @@ body {
   font-size: 14px;
 }
 
-/* Left (other user) */
+
 .left {
   background: white;
   color: #333;
   align-self: flex-start;
 }
 
-/* Right (you) */
+
 .right {
   background: linear-gradient(135deg, #6a5acd, #3b82f6);
   color: white;
   margin-left: auto;
 }
 
-/* Smaller bubble */
+
 .small {
   max-width: 60%;
 }
 
-/* Input */
+
 .input-box {
   position: absolute;
   bottom: 70px;

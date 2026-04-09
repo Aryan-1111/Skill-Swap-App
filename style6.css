@@ -19,7 +19,7 @@ body {
 }
 
 
-/* Phone Frame */
+
 .phone {
   width: 320px;
   height: 550px;
@@ -33,7 +33,7 @@ body {
   backdrop-filter:blur(10px);
 }
 
-/* Header */
+
 .header {
   background: linear-gradient(135deg, #6a5acd, #3b82f6);
   color: white;
@@ -47,7 +47,7 @@ body {
   font-size: 30px;
 }
 
-/* Form */
+
 .form {
   padding: 20px;
 }
@@ -63,7 +63,7 @@ label {
   font-weight: 500;
 }
 
-/* Input Box */
+
 .input-box {
   display: flex;
   align-items: center;
@@ -85,7 +85,6 @@ label {
   background: transparent;
 }
 
-/* Button */
 .btn {
   width: 100%;
   margin-top: 25px;
@@ -98,7 +97,7 @@ label {
   cursor: pointer;
 }
 
-/* Bottom Nav */
+
 .bottom-nav {
   position: absolute;
   bottom: 0;
