@@ -42,7 +42,8 @@ body::before{
   width:90%;
   max-width:350px;
   text-align:center;
-  background:rgba(176, 202, 255, 0.85);
+  /* background:rgba(176, 202, 255, 0.85); */
+  background-color: rgba(212, 200, 186);
   padding:25px;
   border-radius:20px;
   box-shadow:1px 2px 10px 5px rgba(0,0,0,0.3);
