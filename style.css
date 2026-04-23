@@ -6,12 +6,14 @@
 
 body{
   /* background-color:#9f95e9; */
-  background-image:url("https://imgs.search.brave.com/uqNnVg_b-ByTsRF9HVDLJ9cGTrA8E0OKzqMmC2CkX48/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA1Lzk1LzczLzY5/LzM2MF9GXzU5NTcz/NjkwMF9tUzU2b0Ft/OU43SWFGRHdCUEtz/UklNSWx3UERFVFNZ/YS5qcGc");
+  /* background-image:url("https://imgs.search.brave.com/uqNnVg_b-ByTsRF9HVDLJ9cGTrA8E0OKzqMmC2CkX48/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA1Lzk1LzczLzY5/LzM2MF9GXzU5NTcz/NjkwMF9tUzU2b0Ft/OU43SWFGRHdCUEtz/UklNSWx3UERFVFNZ/YS5qcGc"); */
    background-size:cover;
   background-position:center;
   background-repeat:no-repeat;
   backdrop-filter: blur(5px);
-}
+  background-color: 
+rgba(196, 224, 238);
+};
 
 
 #bg-video{
