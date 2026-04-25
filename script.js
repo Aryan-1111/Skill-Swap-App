@@ -1,46 +1,32 @@
-gsap.from("#main1",{
-    y:-100,
-    opacity:0,
-    duration:2.5,
-    // stagger:0.3,
+let slides = document.querySelectorAll(".slide");
+let dots = document.querySelectorAll(".dot");
 
-})
+let index = 0;
 
-gsap.from("#main2",{
-    x:-500,
-    opacity:0,
-    duration:2,
-    stagger:0.3,
-})
+function showSlide(i){
+    slides.forEach(slide => slide.classList.remove("active"));
+    dots.forEach(dot => dot.classList.remove("active"));
 
-const button = document.querySelector("#btn");
+    slides[i].classList.add("active");
+    dots[i].classList.add("active");
+}
 
-button.addEventListener("mouseenter", () => {
-  gsap.to(button, {
-    scale: 1.1,
-    duration: 0.3
-  });
+function autoSlide(){
+    index++;
+    if(index >= slides.length){
+        index = 0;
+    }
+    showSlide(index);
+}
+
+setInterval(autoSlide,3000);
+
+dots.forEach((dot,i)=>{
+    dot.addEventListener("click",()=>{
+        index = i;
+        showSlide(index);
+    });
 });
-
-button.addEventListener("mouseleave", () => {
-  gsap.to(button, {
-    scale: 1,
-    duration: 0.3
-  });
-
-  setTimeout(()=>{
-    window.location.href = "index2.html";
-  })
-});
-
-
-gsap.to("a", {
-  boxShadow: "0px 0px 20px #070505",
-  repeat: -1,
-  yoyo: true,
-  duration: 1
-});
-
 
 
 

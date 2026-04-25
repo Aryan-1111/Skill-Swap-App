@@ -1,36 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Skill-App </title>
-    <a href="index2.html"></a>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skill India UI Clone</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-      <div class="video-container">
-        <video autoplay muted loop id="bg-video">
-            <source src="https://www.pexels.com/download/video/3163534/" type="video/mp4">
-        </video>
-<header id="mains">
-    <h1 id="main1"><span style="color:rgb(255, 111, 111)">S</span>killSwap</h1>
-    <h2 id="main3"><span style="color:rgb(246, 90, 90)">कौशल </span>भारत - कुशल भारत</h2>
-   <h1 id="main2"><span>Learn.</span>
-    <span style="color:rgb(247, 39, 39)">Teach.</span>
-    <span >Grow.</span>
-</h1>
-
-<a href="index2.html">
-    <button id="bt" autofocus><span style="color:red">G</span>et Started<span style="color:red">-</span></button>
-</a>
-
- 
-</header>
+<!-- Topbar -->
+<div class="topbar">
+    <div>🇮🇳 Government of India</div>
+    <div class="right">
+        <span>Location</span>
+        <span>Screen Reader</span>
     </div>
-  
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>   
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+</div>
+
+<!-- Navbar -->
+<nav>
+    <div class="logo">
+        <h1>Skill India</h1>
+    </div>
+
+    <div class="search-box">
+        <input type="text" placeholder="Search Skill Courses">
+    </div>
+
+    <div class="nav-btns">
+        <button class="register">REGISTER</button>
+       <a href="index2.html"> <button class="login">LOGIN</button></a>
+    </div>
+</nav>
+
+<!-- Menu -->
+<div class="menu">
+    <a href="#">Courses</a>
+    <a href="#">Opportunities</a>
+    <a href="#">Resources</a>
+    <a href="#">Navachar</a>
+</div>
+
+<!-- Hero Section -->
+<section class="hero">
+
+    <div class="slide slide1 active">
+        <div class="left">
+            <h2>सिद्ध</h2>
+            <p>Achieved a milestone of</p>
+        </div>
+
+        <div class="right-text">
+            <h1>1Cr</h1>
+        </div>
+    </div>
+
+    <div class="slide slide2">
+        <h1>Learn New Skills</h1>
+        <p>Upgrade Yourself With Best Courses</p>
+    </div>
+
+    <div class="dots">
+        <div class="dot active"></div>
+        <div class="dot"></div>
+    </div>
+
+</section>
+
 <script src="script.js"></script>
 </body>
 </html>
